@@ -1,13 +1,17 @@
 <template>
   <div>
-    <router-link to="/#">$ref, $nextTick()等</router-link>
-    <!--<router-view/>-->
+    <!--<refnexttick></refnexttick>-->
+    <router-link to="/refnexttick">$ref, $nextTick()等</router-link>
+    <router-view/>
   </div>
 </template>
 
 <script>
+// import refnexttick from '@/components/day4/refnexttick'
 export default {
-  //
+  // components: {
+  //   refnexttick
+  // }
 }
 </script>
 
