@@ -2,6 +2,9 @@
   <div>
     <!--<refnexttick></refnexttick>-->
     <router-link to="/refnexttick">$ref, $nextTick()等</router-link>
+    <router-link to="/fathertoson">father To son</router-link>
+    <router-link to="/sontofather">son To father</router-link>
+    <router-link to="/sync">Sync Modifiers</router-link>
     <router-view/>
   </div>
 </template>
@@ -18,6 +21,7 @@ export default {
 <style scoped>
 a {
   padding: 5px;
+  margin: 5px;
   background: crimson;
   color: #fff;
   text-decoration: none;
