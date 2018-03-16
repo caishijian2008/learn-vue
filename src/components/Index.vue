@@ -5,6 +5,8 @@
     <router-link to="/fathertoson">father To son</router-link>
     <router-link to="/sontofather">son To father</router-link>
     <router-link to="/sync">Sync Modifiers</router-link>
+    <router-link to="/shoppingcart">Shopping Cart</router-link>
+    <router-link to="/shoppingcartfin">Shopping Cart 最终版</router-link>
     <router-view/>
   </div>
 </template>

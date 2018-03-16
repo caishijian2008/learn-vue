@@ -5,6 +5,8 @@ import refnexttick from '@/components/day4/refnexttick'
 import fathertoson from '@/components/day4/fatherToson/father'
 import sontofather from '@/components/day4/sonTofather/father'
 import syncmod from '@/components/day4/sync/father'
+import shoppingcart from '@/components/day2/shoppingcart'
+import shoppingcartfin from '@/components/day2/shoppingcart_final'
 
 Vue.use(Router)
 
@@ -21,6 +23,8 @@ export default new Router({
     {path: '/fathertoson', component: fathertoson},
     {path: '/sontofather', component: sontofather},
     {path: '/sync', component: syncmod},
+    {path: '/shoppingcart', component: shoppingcart},
+    {path: '/shoppingcartfin', component: shoppingcartfin},
     {path: '*', redirect: 'index'}
   ]
 })
