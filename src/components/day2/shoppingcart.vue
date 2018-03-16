@@ -60,7 +60,7 @@ export default {
     },
     change () {
       // 根据当前自己的状态设置其他人的状态，实现全选和反选
-      this.products.forEach(item => item.isSelected = this.checkAll)
+      this.products.forEach(item => (item.isSelected = this.checkAll))
     },
     remove (p) { // p代表的是当前点击的这一项
       this.products = this.products.filter(item => item !== p)

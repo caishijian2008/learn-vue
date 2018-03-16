@@ -53,7 +53,7 @@ export default {
         return this.products.every(p => p.isSelected)
       },
       set (val) { // 当给checkbox赋值的时候
-        this.products.forEach(item => item.isSelected = val)
+        this.products.forEach(item => (item.isSelected = val))
       }
     },
     sum () { // 如果计算属性写成函数，默认调用的就是get方法
