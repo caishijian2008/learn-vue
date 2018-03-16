@@ -84,7 +84,7 @@ export default {
     getData () {
       axios.get('../../../static/cart.json').then(res => {
         this.products = res.data
-        this.checkOne()
+        // this.checkOne()
       }, err => {
         console.log(err)
       })
