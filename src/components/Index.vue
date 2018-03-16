@@ -1,26 +1,34 @@
 <template>
   <div>
-    <!--<refnexttick></refnexttick>-->
-    <router-link to="/refnexttick">$ref, $nextTick()等</router-link>
-    <router-link to="/fathertoson">father To son</router-link>
-    <router-link to="/sontofather">son To father</router-link>
-    <router-link to="/sync">Sync Modifiers</router-link>
-    <router-link to="/shoppingcart">Shopping Cart</router-link>
-    <router-link to="/shoppingcartfin">Shopping Cart 最终版</router-link>
-    <router-view/>
+    <ul>
+      <li><router-link to="/refnexttick">$ref, $nextTick()等</router-link></li>
+      <li><router-link to="/fathertoson">father To son</router-link></li>
+      <li><router-link to="/sontofather">son To father</router-link></li>
+      <li><router-link to="/sync">Sync Modifiers</router-link></li>
+      <li><router-link to="/shoppingcart">Shopping Cart</router-link></li>
+      <li><router-link to="/shoppingcartfin">Shopping Cart 最终版</router-link></li>
+    </ul>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-// import refnexttick from '@/components/day4/refnexttick'
 export default {
-  // components: {
-  //   refnexttick
-  // }
+  //
 }
 </script>
 
 <style scoped>
+ul {
+  list-style-type: none;
+  float: left;
+}
+
+ul li {
+   display: inline-block;
+   margin-top: 20px;
+}
+
 a {
   padding: 5px;
   margin: 5px;
