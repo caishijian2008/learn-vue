@@ -24,4 +24,4 @@ checkAll: {
   }
 }
 ```
-计算属性自带getter和setter，就像Object.defindProperties()一样，如果计算属性写成函数，默认调用的就是get方法。
+计算属性自带getter和setter，就像Object.defindProperty()一样，如果计算属性写成函数，默认调用的就是get方法。
