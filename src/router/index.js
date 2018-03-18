@@ -7,6 +7,8 @@ import sontofather from '@/components/day4/sonTofather/father'
 import syncmod from '@/components/day4/sync/father'
 import shoppingcart from '@/components/day2/shoppingcart'
 import shoppingcartfin from '@/components/day2/shoppingcart_final'
+import cartdemo from '@/components/day3/cartdemo'
+import watch from '@/components/day3/watch'
 
 Vue.use(Router)
 
@@ -25,6 +27,8 @@ export default new Router({
     {path: '/sync', component: syncmod},
     {path: '/shoppingcart', component: shoppingcart},
     {path: '/shoppingcartfin', component: shoppingcartfin},
+    {path: '/cartdemo', component: cartdemo},
+    {path: '/watch', component: watch},
     {path: '*', redirect: 'index'}
   ]
 })
