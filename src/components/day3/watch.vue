@@ -1,5 +1,6 @@
 <template>
   <div>
+    输入任意字符：<br />
     <input type="text" v-model="a">
     {{msg}}
   </div>
