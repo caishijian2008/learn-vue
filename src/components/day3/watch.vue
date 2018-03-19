@@ -15,8 +15,8 @@ export default {
     }
   },
   // watch用于异步，只有值变化时才会触发。
-  // 常见场景如：注册时判断用户名是否已存在；添加中间状态。
-  // 还可使用vm.$watch(expOrFn, callback)
+  // 常见场景如：注册时通过后端判断用户名是否已存在，添加中间状态。
+  // 还可使用vm.$watch(expOrFn, callback, [options])
   watch: {
     a (newVal, oldVal) { // watch的属性名要和观察的对象的名字一致
       // console.log(newVal, oldVal)
@@ -40,6 +40,19 @@ export default {
     }
   } */
 }
+// 使用vm.$watch()
+/* vm.$watch('vm.a', function (newVal, oldVal) {
+      vm.msg = '等一下。。。。。。'
+      setTimeout(() => {
+        if (newVal.length < 3) {
+          return (vm.msg = '太少了')
+        }
+        if (newVal.length > 6) {
+          return (vm.msg = '太多了')
+        }
+        vm.msg = ''
+      }, 2000)
+}) */
 </script>
 
 <style scoped>
