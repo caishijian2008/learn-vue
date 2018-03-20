@@ -9,6 +9,7 @@ import shoppingcart from '@/components/day2/shoppingcart'
 import shoppingcartfin from '@/components/day2/shoppingcart_final'
 import cartdemo from '@/components/day3/cartdemo'
 import watch from '@/components/day3/watch'
+import slot from '@/components/day5/slot/index'
 
 Vue.use(Router)
 
@@ -29,6 +30,7 @@ export default new Router({
     {path: '/shoppingcartfin', component: shoppingcartfin},
     {path: '/cartdemo', component: cartdemo},
     {path: '/watch', component: watch},
+    {path: '/slot', component: slot},
     {path: '*', redirect: 'index'}
   ]
 })

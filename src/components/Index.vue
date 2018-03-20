@@ -9,6 +9,7 @@
       <li><router-link to="/shoppingcartfin">Shopping Cart 最终版</router-link></li>
       <li><router-link to="/cartdemo">购物车精简版</router-link></li>
       <li><router-link to="/watch">watch 监听器</router-link></li>
+      <li><router-link to="/slot">slot</router-link></li>
     </ul>
     <router-view></router-view>
   </div>
