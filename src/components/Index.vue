@@ -10,8 +10,11 @@
       <li><router-link to="/cartdemo">购物车精简版</router-link></li>
       <li><router-link to="/watch">watch 监听器</router-link></li>
       <li><router-link to="/slot">slot</router-link></li>
+      <li><router-link to="/refs">父组件调用子组件的方法</router-link></li>
     </ul>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 

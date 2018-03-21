@@ -10,6 +10,7 @@ import shoppingcartfin from '@/components/day2/shoppingcart_final'
 import cartdemo from '@/components/day3/cartdemo'
 import watch from '@/components/day3/watch'
 import slot from '@/components/day5/slot/index'
+import refs from '@/components/day5/refs/refs'
 
 Vue.use(Router)
 
@@ -31,6 +32,7 @@ export default new Router({
     {path: '/cartdemo', component: cartdemo},
     {path: '/watch', component: watch},
     {path: '/slot', component: slot},
+    {path: '/refs', component: refs},
     {path: '*', redirect: 'index'}
   ]
 })
