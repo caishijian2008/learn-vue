@@ -12,6 +12,7 @@ import watch from '@/components/day3/watch'
 import slot from '@/components/day5/slot/index'
 import refs from '@/components/day5/refs/refs'
 import nexttick from '@/components/day5/refs/nexttick'
+import slotdemo from '@/components/day5/slot/slotdemo'
 
 Vue.use(Router)
 
@@ -35,6 +36,7 @@ export default new Router({
     {path: '/slot', component: slot},
     {path: '/refs', component: refs},
     {path: '/nexttick', component: nexttick},
+    {path: '/slotdemo', component: slotdemo},
     {path: '*', redirect: 'index'}
   ]
 })
