@@ -1,6 +1,6 @@
 <template>
   <div>
-    slot结合父子传递，框架：<br />
+    slot结合父子传递，bootstrap4.0框架：<br />
     <card type="primary">
       <div slot="title">这是一篇vue的使用</div>
       <div slot="content">内容区
