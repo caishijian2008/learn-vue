@@ -11,7 +11,7 @@
       </div>
       <div slot="default">作者：XXX</div><!-- 注销此行时就显示 <slot>匿名</slot> -->
     </card>
-    <!-- <card type="warning"></card> -->
+    <card type="warning"></card>
   </div>
 </template>
 

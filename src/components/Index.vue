@@ -13,6 +13,7 @@
       <li><router-link to="/refs">父组件调用子组件的方法</router-link></li>
       <li><router-link to="/nexttick">强调NextTick</router-link></li>
       <li><router-link to="/slotdemo">slot用法2</router-link></li>
+      <li><router-link to="/slotdemo2">slot用法3</router-link></li>
     </ul>
     <keep-alive>
       <router-view></router-view>

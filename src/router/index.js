@@ -13,6 +13,7 @@ import slot from '@/components/day5/slot/index'
 import refs from '@/components/day5/refs/refs'
 import nexttick from '@/components/day5/refs/nexttick'
 import slotdemo from '@/components/day5/slot/slotdemo'
+import slotdemo2 from '@/components/day5/slot/slotdemo2'
 
 Vue.use(Router)
 
@@ -37,6 +38,7 @@ export default new Router({
     {path: '/refs', component: refs},
     {path: '/nexttick', component: nexttick},
     {path: '/slotdemo', component: slotdemo},
+    {path: '/slotdemo2', component: slotdemo2},
     {path: '*', redirect: 'index'}
   ]
 })
