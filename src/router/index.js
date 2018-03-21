@@ -11,6 +11,7 @@ import cartdemo from '@/components/day3/cartdemo'
 import watch from '@/components/day3/watch'
 import slot from '@/components/day5/slot/index'
 import refs from '@/components/day5/refs/refs'
+import nexttick from '@/components/day5/refs/nexttick'
 
 Vue.use(Router)
 
@@ -33,6 +34,7 @@ export default new Router({
     {path: '/watch', component: watch},
     {path: '/slot', component: slot},
     {path: '/refs', component: refs},
+    {path: '/nexttick', component: nexttick},
     {path: '*', redirect: 'index'}
   ]
 })
