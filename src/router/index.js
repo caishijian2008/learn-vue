@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/components/index'
+// import app from '../App'
 import refnexttick from '@/components/day4/refnexttick'
 import fathertoson from '@/components/day4/fatherToson/father'
 import sontofather from '@/components/day4/sonTofather/father'
@@ -14,6 +15,7 @@ import refs from '@/components/day5/refs/refs'
 import nexttick from '@/components/day5/refs/nexttick'
 import slotdemo from '@/components/day5/slot/slotdemo'
 import slotdemo2 from '@/components/day5/slot/slotdemo2'
+import routeprogramming from '@/components/day5/route/routeprogramming'
 
 Vue.use(Router)
 
@@ -26,6 +28,12 @@ export default new Router({
       name: 'index',
       component: index
     },
+    // {path: '', component: app},
+    // {
+    //   path: '/',
+    //   name: 'index',
+    //   component: app
+    // },
     {path: '/refnexttick', component: refnexttick},
     {path: '/fathertoson', component: fathertoson},
     {path: '/sontofather', component: sontofather},
@@ -39,6 +47,14 @@ export default new Router({
     {path: '/nexttick', component: nexttick},
     {path: '/slotdemo', component: slotdemo},
     {path: '/slotdemo2', component: slotdemo2},
-    {path: '*', redirect: 'index'}
+    {path: '/routeprogramming', component: routeprogramming},
+    {
+      path: '*',
+      redirect: 'index'
+    }
+    // {
+    //   path: '*',
+    //   redirect: 'app'
+    // }
   ]
 })
