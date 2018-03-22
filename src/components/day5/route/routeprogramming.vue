@@ -1,12 +1,12 @@
 <template>
   <div>
     <h3>编程式导航</h3> <br />
-    声明式：<br />
+    （一）声明式：<br />
     <router-link to="/home" tag="button">首页</router-link>
     <router-link to="/list">列表</router-link>
     <router-view></router-view>
     <br />
-    编程式：<br />
+    （二）编程式：<br />
     <!--         to="/home2" -->
     <router-link :to="{path:'/home2'}" tag="button">首页</router-link><!-- 动态的to -->
     <router-link to="/list2" tag="button">列表</router-link>
@@ -37,10 +37,12 @@ let list2 = {
   }
 }
 let routes = [ // 路由映射表，配置路由和组件的关系
+  {path: '', component: home}, // 默认展示的路由
   {path: '/home', component: home}, // 配置的关系就是页面级组件
   {path: '/list', component: list},
   {path: '/home2', component: home2},
-  {path: '/list2', component: list2}
+  {path: '/list2', component: list2},
+  {path: '*', redirect: '/home'} // 路径变了，组件也要切换，404的时候
 ]
 let router = new Router({
   // mode: 'history', // 默认为hash模式
