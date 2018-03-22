@@ -10,7 +10,7 @@
       <slot>匿名</slot>
       <!-- 相当于下面的： -->
       <!-- <slot name="default">匿名</slot> -->
-      <button @click="say">点我说标题</button>
+      <button @click="say">点我说标题</button><!-- 此处用于slotdemo2.vue -->
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@
 <script>
 export default {
   methods: {
-    say () {
+    say () { // 此处用于slotdemo2.vue
       this.$emit('say-title', this.$refs.head.innerText)
     }
   },
