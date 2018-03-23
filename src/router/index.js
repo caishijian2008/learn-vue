@@ -16,6 +16,7 @@ import nexttick from '@/components/day5/refs/nexttick'
 import slotdemo from '@/components/day5/slot/slotdemo'
 import slotdemo2 from '@/components/day5/slot/slotdemo2'
 import routeprogramming from '@/components/day5/route/routeprogramming'
+import nestedrouter from '@/components/day5/route/nestedrouter'
 
 Vue.use(Router)
 
@@ -48,6 +49,7 @@ export default new Router({
     {path: '/slotdemo', component: slotdemo},
     {path: '/slotdemo2', component: slotdemo2},
     {path: '/routeprogramming', component: routeprogramming},
+    {path: '/nestedrouter', component: nestedrouter},
     {
       path: '*',
       redirect: 'index'
