@@ -16,6 +16,7 @@
       <li><router-link to="/slotdemo2">slot与组件的循环</router-link></li>
       <li><router-link to="/routeprogramming">编程式导航</router-link></li>
       <li><router-link to="/nestedrouter">路由的嵌套</router-link></li>
+      <li><router-link to="/routerparams">路由参数、命名路由与watch监控ajax</router-link></li>
     </ul>
     <keep-alive>
       <router-view></router-view>
