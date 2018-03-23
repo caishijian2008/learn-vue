@@ -18,6 +18,7 @@ import slotdemo2 from '@/components/day5/slot/slotdemo2'
 import routeprogramming from '@/components/day5/route/routeprogramming'
 import nestedrouter from '@/components/day5/route/nestedrouter'
 import routerparams from '@/components/day5/route/routerparams'
+import routetransition from '@/components/day5/route/routetransition'
 
 Vue.use(Router)
 
@@ -52,6 +53,7 @@ export default new Router({
     {path: '/routeprogramming', component: routeprogramming},
     {path: '/nestedrouter', component: nestedrouter},
     {path: '/routerparams', component: routerparams},
+    {path: '/routetransition', component: routetransition},
     {
       path: '*',
       redirect: 'index'
