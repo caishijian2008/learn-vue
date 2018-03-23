@@ -1,6 +1,7 @@
 <template>
   <div>
-    父组件调用子组件的方法：<br />
+    父组件调用子组件的方法$refs：<br />
+    ref如果放在组件上，获取的是组件的实例，并不是组件的dom元素<br />
     <button @click="dis">调用子组件的方法</button>
     <loading ref="load"></loading>
   </div>

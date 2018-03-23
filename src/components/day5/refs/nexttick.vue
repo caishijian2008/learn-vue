@@ -2,7 +2,8 @@
   <div>
     子组件和父组件同时拥有mounted方法时，<br />
     需要等待子组件挂载完成后再触发父组件的挂载<br />
-    想要操作dom，就须使用$nextTick<br />
+    想要操作dom，就须使用$nextTick() ！！<br />
+    详看终端console：<br />
     <child ref="child"></child>
   </div>
 </template>
@@ -13,8 +14,10 @@
 export default {
   mounted () {
     // alert('parent')
+    console.log('不是想要的: ')
     console.log(this.$refs.child.$el.innerHTML) // 得到的结果不是想要的，123
     this.$nextTick(() => { // 想要操作dom，就加一个$nextTick
+      console.log('想要的: ')
       console.log(this.$refs.child.$el.innerHTML) // 这才是想要的，456
     })
   },
