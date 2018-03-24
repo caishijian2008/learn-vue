@@ -16,7 +16,7 @@
       <!-- 要缓存谁，就把谁用<keep-alive>包起来 -->
       <keep-alive>
         <!-- 为防止动画的抖动，可为<router-view>添加position样式 -->
-        <router-view style="position: absolute; top: 8%; left: 0; width: 100%;"></router-view>
+        <router-view style="position: absolute; top: 20%; left: 0; width: 100%;"></router-view>
       </keep-alive>
     </transition>
   </div>

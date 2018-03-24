@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/components/index'
 // import app from '../App'
 import refnexttick from '@/components/day4/refnexttick'
 import fathertoson from '@/components/day4/fatherToson/father'
@@ -25,16 +24,10 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   routes: [
-    {path: '', component: index},
-    {
-      path: '/',
-      name: 'index',
-      component: index
-    },
     // {path: '', component: app},
     // {
     //   path: '/',
-    //   name: 'index',
+    //   name: 'app',
     //   component: app
     // },
     {path: '/refnexttick', component: refnexttick},
@@ -53,14 +46,10 @@ export default new Router({
     {path: '/routeprogramming', component: routeprogramming},
     {path: '/nestedrouter', component: nestedrouter},
     {path: '/routerparams', component: routerparams},
-    {path: '/routetransition', component: routetransition},
-    {
-      path: '*',
-      redirect: 'index'
-    }
+    {path: '/routetransition', component: routetransition}
     // {
     //   path: '*',
-    //   redirect: 'app'
+    //   redirect: '/app'
     // }
   ]
 })
