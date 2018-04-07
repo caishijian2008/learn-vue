@@ -18,7 +18,7 @@ export default {
       this.$store.commit('add', 2)
     },
     minus () {
-      //
+      this.$store.commit('minus')
     }
   }
 }
