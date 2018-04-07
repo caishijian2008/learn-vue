@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import * as Types from '../../../store/mutations-types'
+import * as Types from '../../../store/mutation-types'
 export default {
   methods: {
     add () {

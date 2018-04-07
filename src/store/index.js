@@ -10,6 +10,8 @@ Vue.use(Vuex)
 const state = { count: 0 }
 
 export default new Vuex.Store({ // 容器是唯一的
+  // 不要在发布环境下启用严格模式!!
+  // 而应：strict: process.env.NODE_ENV !== 'production'
   strict: true, // 只能通过mutation来更改状态，mutation相当于管理员的角色，mutation不支持异步
   plugins: [logger()], // logger是vuex的日志插件
   state,
