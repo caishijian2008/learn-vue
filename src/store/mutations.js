@@ -1,5 +1,6 @@
 // 宏：
 // 把mutations的方法名抽离出来，便于调用，且会有方法的提示
+// [Types.INCREMENT] (state, num) {} 中的[]是ES6的语法
 import * as Types from './mutations-types'
 const mutations = {
   // state是自动放入的，默认指的就是当前的state
