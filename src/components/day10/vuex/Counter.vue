@@ -10,15 +10,18 @@
 </template>
 
 <script>
+import * as Types from '../../../store/mutations-types'
 export default {
   methods: {
     add () {
       // 提交add的mutation
       // 载荷：payload
-      this.$store.commit('add', 2)
+      // this.$store.commit('add', 2)
+      this.$store.commit(Types.INCREMENT, 2)
     },
     minus () {
-      this.$store.commit('minus')
+      // this.$store.commit('minus')
+      this.$store.commit(Types.DECREMENT)
     }
   }
 }
