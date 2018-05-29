@@ -19,6 +19,7 @@ import nestedrouter from '@/components/day5/route/nestedrouter'
 import routerparams from '@/components/day5/route/routerparams'
 import routetransition from '@/components/day5/route/routetransition'
 import counter from '@/components/day10/vuex/counter'
+import i18n from '@/components/others/i18n/Index'
 
 Vue.use(Router)
 
@@ -48,7 +49,8 @@ export default new Router({
     {path: '/nestedrouter', component: nestedrouter},
     {path: '/routerparams', component: routerparams},
     {path: '/routetransition', component: routetransition},
-    {path: '/counter', component: counter}
+    {path: '/counter', component: counter},
+    {path: '/i18n', component: i18n}
     // {
     //   path: '*',
     //   redirect: '/app'
